@@ -1,0 +1,13 @@
+# ns-must-label-state.yaml
+
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: service-must-label-state
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Service"]
+  parameters:
+    labels: ["state"]

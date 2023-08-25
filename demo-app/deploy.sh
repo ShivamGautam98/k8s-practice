@@ -1,3 +1,4 @@
+kubectl get node
 kubectl get pod # get all pods
 kubectl apply -f mongo-config.yaml
 kubectl apply -f mongo-secret.yaml
