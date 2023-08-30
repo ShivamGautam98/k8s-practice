@@ -1,3 +1,45 @@
+# Useful kubectl Commands for OPA Gatekeeper:
+
+# 1. Apply a Constraint Template:
+#    kubectl apply -f constraint-template.yaml
+
+# 2. Apply a Constraint Resource:
+#    kubectl apply -f constraint-resource.yaml
+
+# 3. Get All Constraint Templates:
+#    kubectl get constrainttemplates
+
+# 4. Get All Constraint Resources:
+#    kubectl get constraints
+
+# 5. Describe a Constraint Template:
+#    kubectl describe constrainttemplate <template-name>
+
+# 6. Describe a Constraint Resource:
+#    kubectl describe constraint <constraint-name>
+
+# 7. Delete a Constraint Template:
+#    kubectl delete constrainttemplate <template-name>
+
+# 8. Delete a Constraint Resource:
+#    kubectl delete constraint <constraint-name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # get namespaces
 kubectl get ns 
 # kustomize build . | kubectl apply -f -
@@ -21,3 +63,14 @@ kubectl apply -f service-must-label-state.yaml
 cd ../demo-app
 kubectl apply -f mongo.yaml
 kubectl apply -f webapp.yaml
+# 1. ConstraintTemplates - Diff types of parameters (Labels etc)
+# 2. Policies exercised to be on Pods, Services, etc
+# 3. Kustomization
+# 4. Deploy multiple ConstraintTemplates and set of policies for each
+# 5. Deploy only policies for the ConstraintTemplates that exist already with GateKeeper
+# 6. Edit/Modify/Update a existing policy with GateKeeper
+# 7. Folders  
+# 8. Querying Gatekeeper for cionstraint templates
+# 9. Can we disable any policies( Constraint/ contr )
+# 10. Can you version the policy 
+
